@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #E6F9FA;
+}
+
+section,
+footer {
+    padding: 54px 0;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+p {
+    color: #141414;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.btn {
+    background-color: #B20000;
+    color: #ffffff;
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+    animation: animate-outline 2s infinite;
+}
+
+.btn:hover {
+    background-color: #7E0000;
+}
+@keyframes animate-outline {
+    0% {
+        box-shadow: 0 0 0 0px rgba(126, 0, 0, 0);
+    }
+    25% {
+        box-shadow: 0 0 0 5px rgba(126, 0, 0, 0.1);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(126, 0, 0, 0.2);
+    }
+    75% {
+        box-shadow: 0 0 0 13px rgba(126, 0, 0, 0.3);
+    }
+    100% {
+        box-shadow: 0 0 0 15px rgba(126, 0, 0, 0.4);
+    }
+}
+
+header {
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    display: flex;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+nav ul li a{
+    margin: 0 5px;
+}
+nav ul a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3;
+}
+nav ul li a.active,
+nav ul li:hover{
+    background-color: #00C1CF;
+}
+
+nav .menu-btn i{
+    color: #ffffff;
+    cursor: pointer;
+    display: none;
+}
+
+
+nav img {
+    max-width: 600px;
+    height: auto;
+}
+
+
+.banner{
+    display: flex;
+    justify-content: center;
+
+}
+
+.banner .banner-text{
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner-text h1{
+    font-size: 96px;
+    color: #ffffff;
+}
+
+.banner .banner-text p{
+    font-size: 20px;
+    color: #ffffffb7;
+    font-weight: lighter;
+    margin: 18px 0;
+}
+/* mais informações */
+.mais-informacoes .container{
+    display: flex;
+    align-items: center;
+}
+
+.mais-informacoes .mais-informacoes-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.mais-informacoes .mais-informacoes-text h3{
+font-size: 50px;
+}
+
+.mais-informacoes .mais-informacoes-text p{
+margin: 5px 0 10px 0;
+}
+
+.mais-informacoes .mais-informacoes-img{
+    width: 50%;
+}
+
+.mais-informacoes .mais-informacoes-img img{
+    width: 400px;
+    height: auto;
+}
+
+.descricao-etec .container {
+    display: flex;
+    align-items: center;
+}
+
+.descricao-etec .descricao-etec-img {
+    width: 50%;
+}
+
+.descricao-etec .descricao-etec-text {
+    width: 50%;
+    padding: 0 40px;
+}
+
+.descricao-etec .descricao-etec-img img {
+    width: 400px;
+    height: auto;
+}
+
+.depoimentos h3{
+    text-align: center;
+}
+
+.depoimentos p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+}
+
+.depoimentos .card-item{
+    background-color: #b2f1f6;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 350px;
+    transition: 0.5s;
+}
+
+.depoimentos .card-item img{
+    border-radius: 100%;
+    width: 80px;
+    display: block;
+    margin: 10px auto;
+}
+
+.depoimentos .card-item .nome{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 15px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item .depoimento{
+    font-size: 15px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.depoimentos .card-item:hover{
+    background-color: #004854;
+    margin-top: -5px;
+}
+
+.depoimentos .card-item:hover .nome,
+.depoimentos .card-item:hover .depoimento {
+    color: #ffffff;
+}
+
+/*parte dos cursos*/
+.etim{
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+}
+/*tipo 1*/
+.curso-informacoes .container{
+    display: flex;
+    align-items: center;
+}
+
+.curso-informacoes .curso-informacoes-text{
+    width: 50%;
+    padding: 0 40px;
+}
+
+.curso-informacoes .curso-informacoes-text h3{
+font-size: 50px;
+}
+
+.curso-informacoes .curso-informacoes-text p{
+margin: 5px 0 10px 0;
+}
+
+.curso-informacoes .curso-informacoes-img{
+    width: 50%;
+}
+
+.curso-informacoes .curso-informacoes-img img{
+    width: 400px;
+    height: auto;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #004854;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #b2f1f6;
+  }
+
+@media (max-width:920px){
+    nav .menu-btn i{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #004854;
+        height: 10vh;
+        width: 100%;
+        align-items: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    nav ul.open{
+        left: 0;
+    }
+    nav ul li{
+        width: 100%;
+        margin: 50px 0;
+    }
+    nav ul li a{
+        font-size: 23px;
+    }
+    nav ul li a.active,
+    nav ul li:hover{
+    background-color: none;
+    color: #7E0000;
+}
+}
